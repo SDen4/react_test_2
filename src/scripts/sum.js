@@ -1,3 +1,12 @@
-let add = (a,b) => a+b;
+import React from 'react';
+import {render} from 'react-dom';
 
-console.log(add(2,3));
+function HelloWorld() {
+    return (
+        <div>
+            <h1>Hello World!</h1>
+        </div>
+    )
+};
+
+render(<HelloWorld />, document.getElementById('root'));

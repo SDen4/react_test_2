@@ -8,6 +8,9 @@
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.config.js",
     "build": "webpack --config ./build/webpack.build.config.js"
   },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
   "browserslist": [
     ">1%",
     "last 3 version"
@@ -15,10 +18,7 @@
   "author": "DenS",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "^7.8.4",
-    "@babel/preset-env": "^7.8.4",
     "autoprefixer": "^9.7.4",
-    "babel-loader": "^8.0.6",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.2",
     "cssnano": "^4.1.10",
@@ -40,6 +40,11 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "vue": "^2.6.11"
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
   }
 }
