@@ -24,6 +24,16 @@ body {
     justify-content: center;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: $default-color;
+  @include tablet {
+      color: $main-color;
+  };
+}
+
 button {
   border: 0;
   cursor: pointer;

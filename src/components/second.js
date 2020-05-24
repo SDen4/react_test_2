@@ -1,6 +1,7 @@
 import React from 'react';
 
-function Second() {
+function Second(flag) {
+    // console.log(flag);
     const text = <div>Second! Second section</div>;
     return (
         <section className="second">

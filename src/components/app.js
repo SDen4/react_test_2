@@ -4,6 +4,7 @@ import {render} from 'react-dom';
 import First from './first';
 import Second from './second';
 import Third from './third';
+
 import articles from '../scripts/articles';
 
 
@@ -13,7 +14,7 @@ function App() {
         <div className="app">
             <h1>Title of the APP</h1>
             <First />
-            <Second />
+            <Second flag='false' />
             <Third article={articles[0]} />
         </div>
     );
