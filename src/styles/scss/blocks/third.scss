@@ -1,3 +1,15 @@
 .third {
     color: gray;
 }
+
+.third__title {
+    display: flex;
+}
+
+.buttonActive {
+    background-color: red;
+}
+
+.buttonUnActive {
+    background-color: green;
+}
