@@ -6,6 +6,11 @@
     display: flex;
 }
 
+.buttonCommon {
+    border-radius: 10px;
+    outline: none;
+}
+
 .buttonActive {
     background-color: red;
 }

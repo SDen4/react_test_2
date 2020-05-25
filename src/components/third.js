@@ -18,7 +18,13 @@ class Third extends Component {
             <section className='third'>
                 <div className="third__title">
                     <h2>Third Section</h2>
-                    <button onClick={this.handleClick} className={this.state.isOpen ? "buttonActive" : "buttonUnActive"}>{this.state.isOpen ? 'Close' : 'Open'}</button>
+                    <button 
+                        onClick={this.handleClick} 
+                        // sample of using 2 classe, one of them - with js
+                        className={`${this.state.isOpen ? "buttonActive" : "buttonUnActive"} ${"buttonCommon"}`}
+                    >
+                        {this.state.isOpen ? 'Close' : 'Open'}
+                    </button>
                 </div>
                 {title}
                 {text}
