@@ -7,7 +7,7 @@ export default function ArticleList( {articles} ){
         <li key={article.id}><Second article={article} /></li>
         )
     return (
-        <ul>
+        <ul className="article__list">
             {articleElements}
         </ul>
     );

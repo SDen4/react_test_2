@@ -1,0 +1,21 @@
+.buttonCommon {
+    border-radius: 5px;
+    outline: none;
+    padding: 5px 10px;
+}
+
+.buttonActive {
+    background-color: red;
+    transition: .5s;
+    &:hover {
+        background-color: pink;
+    }
+}
+
+.buttonUnActive {
+    background-color: green;
+    transition: .5s;
+    &:hover {
+        background-color: rgb(66, 190, 42);
+    }
+}

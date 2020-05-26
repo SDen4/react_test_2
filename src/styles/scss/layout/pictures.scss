@@ -1,0 +1,17 @@
+.pictures {
+    display: flex;
+}
+
+.image__container {
+    width: 100px;
+    height: 100px;
+    background: url('/assets/images/2.jpg') center center no-repeat;
+    background-size: contain;
+    margin-right: 10px;
+}
+
+.image {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
