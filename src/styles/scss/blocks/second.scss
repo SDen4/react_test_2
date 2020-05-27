@@ -3,11 +3,7 @@
     flex-direction: column;
     align-items: center;
     font-size: 32px;
-}
-
-.second__subtitle {
-    color: blue;
-    margin-right: 10px;
+    width: 100%;
 }
 
 .second__test {
@@ -16,6 +12,7 @@
 
 .second__title {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    width: 35%;
 }

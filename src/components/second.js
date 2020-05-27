@@ -10,7 +10,7 @@ class Third extends Component {
     render() {
         const {article} = this.props;
 
-        const title = this.state.isOpen && <h2 className='second__test'>{article.title}</h2>;
+        const title = <h2 className='second__test'>{article.title}</h2>;
         const text = this.state.isOpen && <p>{article.text}</p>;
         const data = this.state.isOpen && <h3>Creation article date: {article.date}</h3>;
         const pictureBackground = this.state.isOpen && <div className="image__container"></div>;
@@ -22,7 +22,7 @@ class Third extends Component {
         return (
             <section className='second'>
                 <div className="second__title">
-                    <h2 className="second__subtitle">Article</h2>
+                    {title}
                     <button 
                         onClick={this.handleClick} 
                         // sample of using 2 classe, one of them - with js
@@ -31,7 +31,6 @@ class Third extends Component {
                         {this.state.isOpen ? 'Close' : 'Open'}
                     </button>
                 </div>
-                {title}
                 {text}
                 <div className="pictures">
                     {pictureBackground}
