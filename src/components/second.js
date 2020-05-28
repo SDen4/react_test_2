@@ -1,12 +1,21 @@
-import React, {Component} from 'react';
+import React, {PureComponent} from 'react';
 
-class Third extends Component {
+class Third extends PureComponent {
     constructor(props) {
         super(props)
         this.state = {
             isOpen: false
         }
-    };
+    }
+
+    componentWillUnmount(){
+        console.log('mounting')
+    }
+
+    componentWillUpdate(){
+        console.log('updating')
+    }
+
     render() {
         const {article} = this.props;
 
