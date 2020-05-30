@@ -1,31 +1,24 @@
 import React, {PureComponent} from 'react';
 
-class Third extends PureComponent {
+class Second extends PureComponent {
     constructor(props) {
         super(props)
+
         this.state = {
-            isOpen: false
+
         }
     }
 
-    componentWillUnmount(){
-        console.log('mounting')
-    }
-
-    componentWillUpdate(){
-        console.log('updating')
-    }
-
     render() {
-        const {article} = this.props;
+        const {article, isOpen, onButtonClick} = this.props;
 
         const title = <h2 className='second__test'>{article.title}</h2>;
-        const text = this.state.isOpen && <p>{article.text}</p>;
-        const data = this.state.isOpen && <h3>Creation article date: {article.date}</h3>;
-        const pictureBackground = this.state.isOpen && <div className="image__container"></div>;
-        const pictureTag = this.state.isOpen && <img className="image" srcSet="/assets/images/1.jpg"></img>;
+        const text = isOpen && <p>{article.text}</p>;
+        const data = isOpen && <h3>Creation article date: {article.date}</h3>;
+        const pictureBackground = isOpen && <div className="image__container"></div>;
+        const pictureTag = isOpen && <img className="image" srcSet="/assets/images/1.jpg"></img>;
         {/* sample of using js code idside jsx (in {}) */}
-        const curDate = this.state.isOpen && <h3> Current date: {(new Date).toDateString()}</h3>;
+        const curDate = isOpen && <h3> Current date: {(new Date).toDateString()}</h3>;
 
 
         return (
@@ -33,11 +26,11 @@ class Third extends PureComponent {
                 <div className="second__title">
                     {title}
                     <button 
-                        onClick={this.handleClick} 
+                        onClick={onButtonClick} 
                         // sample of using 2 classe, one of them - with js
-                        className={`${this.state.isOpen ? "buttonActive" : "buttonUnActive"} ${"buttonCommon"}`}
+                        className={`${isOpen ? "buttonActive" : "buttonUnActive"} ${"buttonCommon"}`}
                     >
-                        {this.state.isOpen ? 'Close' : 'Open'}
+                        {isOpen ? 'Close' : 'Open'}
                     </button>
                 </div>
                 {text}
@@ -50,12 +43,6 @@ class Third extends PureComponent {
             </section>
         );
     };
-    handleClick = () => {
-        this.setState({
-            // set the invert statetment
-            isOpen: !this.state.isOpen
-        });
-    };
 };
 
-export default Third;
+export default Second;
