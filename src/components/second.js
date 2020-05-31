@@ -1,12 +1,10 @@
 import React, {PureComponent} from 'react';
+import PropTypes, { number, string } from "prop-types";
+
 
 class Second extends PureComponent {
     constructor(props) {
         super(props)
-
-        this.state = {
-
-        }
     }
 
     render() {
@@ -44,5 +42,10 @@ class Second extends PureComponent {
         );
     };
 };
+
+//validation types of props
+Second.propTypes = {
+    article: PropTypes.object.isRequired
+}
 
 export default Second;

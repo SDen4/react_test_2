@@ -1,9 +1,9 @@
 import React, { PureComponent } from "react";
 import Second from "./second";
-// import articles from '../scripts/articles';
+import PropTypes from "prop-types";
 
 
-export default class ArticleList extends PureComponent {
+class ArticleList extends PureComponent {
 
     state = {
         openArticleId: null
@@ -34,3 +34,10 @@ export default class ArticleList extends PureComponent {
         })
     }
 };
+
+//validation types of props
+ArticleList.propTypes = {
+    articles: PropTypes.arrayOf(PropTypes.object).isRequired
+};
+
+export default ArticleList;
