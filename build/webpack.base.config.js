@@ -38,11 +38,11 @@ module.exports = {
             }, {
                 use: ['html-loader', 'pug-html-loader']
             }]
-        },{
+        }, {
             test: /\.js$/,
             loader: "babel-loader",
             exclude: "/node_modules/"
-        },{
+        }, {
             test: /\.js|jsx$/,
             exclude: /node_modules/,
             use: {
@@ -55,15 +55,19 @@ module.exports = {
                     ]
                 }
             }
-        },
-        {
+        }, {
+            test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+            loader: "file-loader",
+            options: {
+                name: "[name].[ext]"
+            }
+        }, {
             test: /\.(png|jpg|gif|svg)$/,
             loader: "file-loader",
             options: {
                 name: "[name].[ext]"
             }
-        },
-        {
+        }, {
             test: /\.scss$/,
             use: [
                 "style-loader",
@@ -81,8 +85,7 @@ module.exports = {
                     options: {sourceMap: true}
                 }
             ],
-        },
-        {
+        }, {
             test: /\.css$/,
             use: [
                 "style-loader",
@@ -104,6 +107,7 @@ module.exports = {
         }),
         new CopyWebpackPlugin([
             {from: `${PATHS.src}/images`, to: `${PATHS.assets}images`},
+            {from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts`},
             {from: `${PATHS.src}/static`, to: ""}
 
         ]),

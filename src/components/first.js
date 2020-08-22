@@ -5,6 +5,8 @@ function First() {
     return (
         <section className="first">
             <h3>Hello World! (First section)</h3>
+            <div className="testFonts">Test added fonts</div>
+            <div className="testFonts2">Тест добавленного шрифта</div>
             {text}
         </section>
     );
