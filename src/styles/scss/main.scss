@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-@import "./layout/fonts.scss";
-@import "./layout/vars.scss";
-@import "./layout/mixins.scss";
-@import "./layout/base.scss";
-@import "./layout/buttons.scss";
-@import "./layout/pictures.scss";
+
+@import './layout/fonts.scss';
+@import './layout/vars.scss';
+@import './layout/mixins.scss';
+@import './layout/base.scss';
+@import './layout/buttons.scss';
+@import './layout/pictures.scss';
 
 
-@import "./blocks/app.scss";
-@import "./blocks/first.scss";
-@import "./blocks/second.scss";
-@import "./blocks/articlelist.scss";
+@import './blocks/app.scss';
+@import './blocks/first.scss';
+@import './blocks/second.scss';
+@import './blocks/articlelist.scss';

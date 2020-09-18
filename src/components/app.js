@@ -13,7 +13,7 @@ class App extends Component {
     }
     render() {
         return (
-            <div className="app">
+            <div className='app'>
                 <h1>Title of the APP</h1>
                 <First />
                 <button onClick={this.handleRevert}>Revert</button>

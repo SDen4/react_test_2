@@ -1,6 +1,6 @@
 # Denis Skryabin
 
-##  Template: react, pug, scss
+##  Template: html, react, scss
 
 ##  Start new project using this build:
 ```sh
@@ -13,3 +13,9 @@ $ git push -u origin master
 $ npm run dev
 ```
 <!-- # Watch on [github-pages](<link>) -->
+
+<!-- 
+github pages
+git add dist && git commit -m "Initial dist subtree commit"
+git subtree push --prefix dist origin gh-pages
+ -->
