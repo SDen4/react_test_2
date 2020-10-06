@@ -15,6 +15,7 @@ class Second extends PureComponent {
         const data = isOpen && <h3>Creation article date: {article.date}</h3>;
         const pictureBackground = isOpen && <div className="image__container"></div>;
         const pictureTag = isOpen && <img className="image" srcSet="/assets/images/1.jpg"></img>;
+
         {/* sample of using js code idside jsx (in {}) */}
         const curDate = isOpen && <h3> Current date: {(new Date).toDateString()}</h3>;
 
@@ -23,8 +24,8 @@ class Second extends PureComponent {
             <section className='second'>
                 <div className="second__title">
                     {title}
-                    <button 
-                        onClick={onButtonClick} 
+                    <button
+                        onClick={onButtonClick}
                         // sample of using 2 classe, one of them - with js
                         className={`${isOpen ? "buttonActive" : "buttonUnActive"} ${"buttonCommon"}`}
                     >

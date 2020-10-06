@@ -13,13 +13,13 @@ class App extends Component {
     }
     render() {
         return (
-            <div className="app">
+            <article className="app">
                 <h1>Title of the APP</h1>
                 <First />
                 <button onClick={this.handleRevert}>Revert</button>
                 {/* using slice() for change a copy but not base array */}
                 <ArticleList articles={this.state.reverted ? articles.slice().reverse() : articles} />
-            </div>
+            </article>
         );
     }
     handleRevert = () => {

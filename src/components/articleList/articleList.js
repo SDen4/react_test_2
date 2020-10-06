@@ -11,13 +11,13 @@ class ArticleList extends PureComponent {
 
     render() {
         const articleElements = this.props.articles.map( (article, index) => 
-            <li 
+            <li
                 key={article.id}
                 className="article"
             >
-                <Second 
-                    article={article} 
-                    isOpen = {this.state.openArticleId === article.id} 
+                <Second
+                    article={article}
+                    isOpen = {this.state.openArticleId === article.id}
                     onButtonClick = {this.handleClick.bind(this, article.id)}
                 />
             </li>
