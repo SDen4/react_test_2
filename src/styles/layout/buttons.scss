@@ -5,7 +5,7 @@
 }
 
 .buttonActive {
-    background-color: red;
+    background-color: $main-color;
     transition: .5s;
     &:hover {
         background-color: pink;

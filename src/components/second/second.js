@@ -1,5 +1,5 @@
 import React, {PureComponent} from 'react';
-import PropTypes, { number, string } from "prop-types";
+import PropTypes, { number, string } from 'prop-types';
 
 
 class Second extends PureComponent {
@@ -22,18 +22,18 @@ class Second extends PureComponent {
 
         return (
             <section className='second'>
-                <div className="second__title">
+                <div className='second__title'>
                     {title}
                     <button
                         onClick={onButtonClick}
                         // sample of using 2 classe, one of them - with js
-                        className={`${isOpen ? "buttonActive" : "buttonUnActive"} ${"buttonCommon"}`}
+                        className={`${isOpen ? 'buttonActive' : 'buttonUnActive'} ${'buttonCommon'}`}
                     >
                         {isOpen ? 'Close' : 'Open'}
                     </button>
                 </div>
                 {text}
-                <div className="pictures">
+                <div className='pictures'>
                     {pictureBackground}
                     {pictureTag}
                 </div>

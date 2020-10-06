@@ -13,7 +13,7 @@ class ArticleList extends PureComponent {
         const articleElements = this.props.articles.map( (article, index) => 
             <li
                 key={article.id}
-                className="article"
+                className='article'
             >
                 <Second
                     article={article}
@@ -23,7 +23,7 @@ class ArticleList extends PureComponent {
             </li>
         )
         return (
-            <ul className="article__list">
+            <ul className='article__list'>
                 {articleElements}
             </ul>
         );
