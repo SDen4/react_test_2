@@ -11,10 +11,6 @@ const PATHS = {
     assets: "assets/"
 }
 
-const PAGES_DIR = `${PATHS.src}/pug/pages/`;
-const PAGES = fs.readdirSync(PAGES_DIR).filter(filename => filename.endsWith('.pug'));
-
-
 module.exports = {
 
     externals: {
@@ -31,13 +27,8 @@ module.exports = {
     },
     module: {
         rules: [{
-            test: /\.pug$/,
-            oneOf: [{
-                resourceQuery: /^\?vue/,
-                use: ["pug-plain-loader"]
-            }, {
-                use: ['html-loader', 'pug-html-loader']
-            }]
+            test: /\.html$/,
+            loader: 'html-loader'
         }, {
             test: /\.js$/,
             loader: "babel-loader",
@@ -85,20 +76,6 @@ module.exports = {
                     options: {sourceMap: true}
                 }
             ],
-        }, {
-            test: /\.css$/,
-            use: [
-                "style-loader",
-                MiniCssExtractPlugin.loader,
-                {
-                    loader: "css-loader",
-                    options: {sourceMap: true}
-                },
-                {
-                    loader: "postcss-loader",
-                    options: {sourceMap: true, config: {path: `${PATHS.src}/js/postcss.config.js}`}}
-                }
-            ]
         }]
     },
     plugins: [
@@ -111,9 +88,10 @@ module.exports = {
             {from: `${PATHS.src}/static`, to: ""}
 
         ]),
-        ...PAGES.map(page => new HtmlWebpackPlugin({
-            template: `${PAGES_DIR}/${page}`,
-            filename: `./${page.replace(/\.pug/,'.html')}`
-        }))
+        new HtmlWebpackPlugin ({
+            hash: false,
+            template: `${PATHS.src}/html/index.html`,
+            filename: './index.html'
+        })
     ]
 }

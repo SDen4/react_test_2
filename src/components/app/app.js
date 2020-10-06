@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 
-import First from './first';
-import ArticleList from './articleList';
+import First from '../first/first';
+import ArticleList from '../articleList/articleList';
 
-import articles from '../scripts/articles';
+import articles from '../../scripts/articles';
 
 
 

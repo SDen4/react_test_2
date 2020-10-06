@@ -1,5 +1,5 @@
 import React, { PureComponent } from "react";
-import Second from "./second";
+import Second from "../second/second";
 import PropTypes from "prop-types";
 
 
