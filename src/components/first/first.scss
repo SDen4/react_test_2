@@ -1,25 +1,22 @@
 .first {
     text-align: center;
-    color: pink;
+    color: $pink;
     font-weight: bold;
 
-    border: 2px solid gray;
+    border: 2px solid $gray;
     border-radius: 5px;
     width: 100%;
     margin-bottom: 10px;
 }
 
 .testFonts {
-    font: {
-        family: $main-font;
-        size: 36px;
-    }
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
 .testFonts2 {
     font: {
-        family: $main-font;
+        family: $additionalFont;
         weight: 100;
         size: 36px;
     }

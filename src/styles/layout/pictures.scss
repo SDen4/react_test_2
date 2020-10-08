@@ -5,7 +5,7 @@
 .image__container {
     width: 100px;
     height: 100px;
-    background: url('/assets/images/2.jpg') center center no-repeat;
+    background: $imgTestBg;
     background-size: contain;
     margin-right: 10px;
 }

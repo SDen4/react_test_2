@@ -4,15 +4,9 @@
 
 body {
   font: {
-<<<<<<< HEAD:src/styles/layout/base.scss
-    family: 'Open Sans', Helvetica, sans-serif;
-    size: 16px;
-  }
-=======
     family: $mainFont;
-    size: 16px;
-  };
->>>>>>> 0ae284ade7773af34bec68e8e6330ba17f5aee6a:src/styles/scss/layout/base.scss
+    size: $mainFontSize;
+  }
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
@@ -43,16 +37,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-<<<<<<< HEAD:src/styles/layout/base.scss
 button[type="button"] {
-=======
-p {
-  margin: 0;
-  padding: 0;
-}
-
-button[type='button'] {
->>>>>>> 0ae284ade7773af34bec68e8e6330ba17f5aee6a:src/styles/scss/layout/base.scss
   cursor: pointer;
   background-color: transparent;
 }
@@ -67,29 +52,3 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
-
-//   // delete arrows from input type number in Chrome, Safari, Edge, Opera
-// input::-webkit-outer-spin-button,
-// input::-webkit-inner-spin-button {
-//     -webkit-appearance: none;
-//     margin: 0
-// }
-
-// // delete arrows from input type number in Firefox
-// input[type=number] {
-//   -moz-appearance:textfield;
-// }
-
-//delete blue mark of tap in mobile version
-// -webkit-tap-highlight-color: transparent
-
-// /* hide scroll */
-// /* chrome, safari */
-// .container::-webkit-scrollbar { width: 0; }
-// /* ie 10+ */
-// .container { -ms-overflow-style: none; }
-// /* ff */
-// .container { overflow: -moz-scrollbars-none; }
-
-// picture with gradient
-//  background: linear-gradient(0deg, #fff,rgba(255,255,255, 0.6) 50%, #222), url("https://preziland.com/wp-content/uploads/Infographics-rainbow-diagram-Prezi-template-1600x900.png") 50%/75px;

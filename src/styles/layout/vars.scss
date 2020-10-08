@@ -1,23 +1,23 @@
 //colors
-$main-color: red;
-$default-color: blue;
+    $main-color: red;
+    $default-color: blue;
+    $pink: pink;
+    $gray: gray;
+    $green: green;
+
+//bg
+    $imgTestBg: url('/assets/images/2.jpg') center center no-repeat;
 
 //fonts
-$mainFont: 'Open Sans', Helvetica, sans-serif;
-$additionalFont: 'Gagalin', sans-serif;
+    $mainFont: 'Open Sans', Helvetica, sans-serif;
+    $additionalFont: 'Gagalin', sans-serif;
+
+//font sizes
+    $mainFontSize: 16px;
 
 //resolutions
-$desktop: 1280px;
-$laptop: 980px;
-$tablet: 768px;
-$smartphone: 480px;
-$phone: 320px;
-
-// sample of background image
-
-// .footer {
-//     display: flex;
-//     width: 100%;
-//     height: 200px;
-//     background-image: url('/assets/images/2.jpg');
-// }
+    $desktop: 1280px;
+    $laptop: 980px;
+    $tablet: 768px;
+    $smartphone: 480px;
+    $phone: 320px;

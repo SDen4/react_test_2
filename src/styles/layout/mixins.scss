@@ -1,3 +1,4 @@
+//width
 @mixin desktop() {
     @media screen and (max-width: $desktop) {
       @content;
@@ -24,6 +25,20 @@
   
   @mixin phone() {
     @media screen and (max-width: $phone) {
+      @content;
+    }
+  }
+
+
+//height
+  @mixin smartphoneGRZ() {
+    @media screen and (max-height: $smartphone) {
+      @content;
+    }
+  }
+
+  @mixin phoneGRZ() {
+    @media screen and (max-height: $phone) {
       @content;
     }
   }
