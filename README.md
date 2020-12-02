@@ -1,6 +1,6 @@
 # Denis Skryabin
 
-##  Template: html, react, scss
+##  Template: html, scss, react, js
 
 ##  Start new project using this build:
 ```sh

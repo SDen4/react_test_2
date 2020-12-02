@@ -23,7 +23,6 @@ class App extends Component {
         );
     }
     handleRevert = () => {
-        console.log('1')
         this.setState({
             reverted: !this.state.reverted
         })

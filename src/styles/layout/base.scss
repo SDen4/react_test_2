@@ -24,10 +24,6 @@ body, button, ul, p {
   align-items: center;
 }
 
-button {
-  cursor: pointer;
-}
-
 ul {
   list-style: none;
 }
@@ -40,6 +36,8 @@ h1, h2, h3, h4, h5, h6 {
 button[type="button"] {
   cursor: pointer;
   background-color: transparent;
+  //delete blue mark of tap in mobile version
+  -webkit-tap-highlight-color: transparent;
 }
 
 a {

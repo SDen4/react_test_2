@@ -1,5 +1,5 @@
 //width
-@mixin desktop() {
+  @mixin desktop() {
     @media screen and (max-width: $desktop) {
       @content;
     }
